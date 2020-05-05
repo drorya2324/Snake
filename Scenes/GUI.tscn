@@ -1,0 +1,54 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Assets/GUI/background.jpg" type="Texture" id=1]
+[ext_resource path="res://Assets/red square.png" type="Texture" id=2]
+
+[node name="GUI" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -1017.0
+margin_top = -92.0
+margin_right = -10.0
+margin_bottom = -12.0
+texture = ExtResource( 1 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TextureRect"]
+margin_left = 32.7806
+margin_top = 17.064
+margin_right = 242.802
+margin_bottom = 145.064
+rect_scale = Vector2( 0.701, 0.348 )
+rect_pivot_offset = Vector2( -0.203, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AppleCount" type="Label" parent="TextureRect/HBoxContainer"]
+margin_top = 57.0
+margin_right = 78.0
+margin_bottom = 71.0
+rect_min_size = Vector2( 0, 0.012 )
+text = "Apple Count"
+
+[node name="NinePatchRect" type="NinePatchRect" parent="TextureRect/HBoxContainer"]
+margin_left = 82.0
+margin_right = 82.0
+margin_bottom = 128.0
+
+[node name="TextureRect2" type="TextureRect" parent="TextureRect/HBoxContainer/NinePatchRect"]
+margin_left = -214.0
+margin_right = -86.0001
+margin_bottom = 128.0
+rect_min_size = Vector2( 64, 64 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
